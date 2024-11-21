@@ -78,4 +78,8 @@ async def guess(ctx):
     else:
         await ctx.send(f'Oops. It was actually {answer}.')
 
+@bot.command()
+async def commands(ctx):
+    await ctx.send("Current bot commands (you must put - before every command without any space, example: -heh 4): hello, heh + (num), add + (num) + (num), subtract + (num) + (num), multiply + (num) + (num), divide + (num) + (num), roll (wip, doesn't work like we want it to), choose + (option 1) + (option 2), userinfo + (display name), guess, commands")
+                
 bot.run(token)
