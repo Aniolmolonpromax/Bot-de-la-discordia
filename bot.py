@@ -15,7 +15,7 @@ async def on_ready():
 
 @bot.command()
 async def hello(ctx):
-    await ctx.send(f'Hola, soy un bot {bot.user}!')
+    await ctx.send(f'Hello, I am {bot.user}!')
 
 @bot.command()
 async def heh(ctx, count_heh = 5):
